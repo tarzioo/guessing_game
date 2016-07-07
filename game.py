@@ -2,11 +2,10 @@
 import random
 rand_num = random.randint(1,2)
 
-
+user = raw_input("Hey, What's your name? ")
 play = 'Y'
 while play.upper() == 'Y':
     guesses = 1
-    user = raw_input("Hey, What's your name? ")
     print "Hey %s, let's play a game! Try to guess what number I'm thinking of" % user
     num = int(raw_input("Hint, it's between 1 and 100: "))
     try:
